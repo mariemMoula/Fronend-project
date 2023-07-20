@@ -1,0 +1,30 @@
+#container {
+    width:50%;
+    height:100vh;
+    color: burlywood;
+    background-color: rgb(75, 10, 23);
+    /* display: none; */
+}
+body {
+    background-color: rgb(190, 100, 100);
+}
+
+#container > #p:hover ,
+#container  button:hover
+{
+    background-color: rgb(160, 137, 179);
+    cursor: pointer;
+}
+button {
+    color: chocolate;
+    background-color: burlywood;
+    border-radius: 5px;
+    border: none;
+}
+#close {
+    position: absolute;
+    left : 480px ;
+}
+.hide{
+    display: none;
+}

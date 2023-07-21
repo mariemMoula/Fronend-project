@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #firstDiv {
+            display: flex;
+            align-items: center;
+        }
+        #lastDiv {
+            display: flex;
+            align-items: center;
+        }
+        #firstDiv > .photos ,
+        #lastDiv > .photos  {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border : 5px solid #aaa ; 
+
+        }
+     
+        #lastDiv > .photos:hover  {
+            border: 5px solid red;
+            cursor: pointer;
+            
+        }
+        #firstDiv > .photos:hover  {
+            border: 5px solid red;
+            cursor: pointer;
+            
+        }
+        .mainDiv img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <title>Kitten's Gallary</title>
+</head>
+<body>
+    <div class="divPhoto" id="firstDiv">
+        <img class="photos" src="kitten/k1.jpg" alt ="a cute cat 1">
+        <img class="photos" src="kitten/k2.jpg" alt ="a cute cat 2">
+        <img class="photos" src="kitten/k3.jpg" alt ="a cute cat 3">
+        <img class="photos" src="kitten/k4.jpg" alt ="a cute cat 4">
+    </div>
+    <div id="mainDiv">
+        <img id="main" class="mainPhoto" src="kitten/k2.jpg" alt ="a cute cat 1">
+    </div>
+    <div class="divPhoto" id="lastDiv">
+        <img class="photos" src="kitten/k1.jpg" alt ="a cute cat 1">
+        <img class="photos" src="kitten/k2.jpg" alt ="a cute cat 2">
+        <img class="photos" src="kitten/k3.jpg" alt ="a cute cat 3">
+        <img class="photos" src="kitten/k4.jpg" alt ="a cute cat 4">
+    </div>
+    <script src="gallery.js"></script>
+</body>
+</html>

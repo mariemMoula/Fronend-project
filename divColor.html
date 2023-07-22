@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        #RED{
+            background-color: red;
+        }
+        #BLUE{
+            background-color: blue;
+        }
+        #GREEN{
+            background-color: green;
+        }
+        #BLACK{
+            background-color: black;
+        }
+    </style>
+    <title>DIVcOLOR</title>
+</head>
+<body id="myBody">
+    <div onclick="setColor(this.id)"  class="color" id="RED"></div>
+    <div onclick="setColor(this.id)"  class="color" id="BLUE"></div>
+    <div onclick="setColor(this.id)"  class="color" id="GREEN"></div>
+    <div onclick="setColor(this.id)" class="color" id="BLACK"></div>
+    <script src="divColor.js"></script>
+</body>
+
+</html>
